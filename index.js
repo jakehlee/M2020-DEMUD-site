@@ -7,11 +7,12 @@ function updateTable(page) {
     console.log(page)
     var T = document.getElementById('gallery');
     var cellArray = Array.from(T.querySelectorAll('.cell'));
+    var linkRoot = "https://mars.nasa.gov/mars2020/multimedia/raw-images/"
 
     get_demud()
         .then(data =>
             cellArray.map(function(cel, idx) {
-                cel.innerHTML = '<img class="m2020-img" src="'+data[(page-1)*25+idx][1]+'">'
+                cel.innerHTML = '<a href="'+linkRoot+data[(page-1)*25+idx][0]+'"><img class="m2020-img" src="'+data[(page-1)*25+idx][1]+'"></a>'
             })
         )
 
