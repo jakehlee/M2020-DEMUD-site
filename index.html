@@ -3,34 +3,86 @@
 
 <head>
     <title>M2020 DEMUD</title>
-    <script   src="https://code.jquery.com/jquery-3.6.0.slim.min.js"   integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI="   crossorigin="anonymous"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <script src='index.js'></script>
     <link rel='stylesheet' href='index.css'>
 </head>
 
 <body>
     <div class="container">
-        <div class="row text-center">
-            <h1 class='display-1'>Mars 2020 Raw Images</h1>
-            <h1><small class="text-muted">Sorted for Content Diversity</small></h1>
-            <br>
-            <p class='desc'>
-                A one-day project by <a href="http://jakehlee.com">Jake Lee</a> using open-source tools
+        <div class="row justify-content-center">
+            <div class="col-md-12 text-center">
+                <h1 class='display-1'>Mars 2020 Raw Images</h1>
+                <h1><small class="text-muted">Sorted for Content Diversity</small></h1>
                 <br>
-                Visit the <a href="https://mars.nasa.gov/mars2020/multimedia/raw-images/">NASA Mars 2020 Raw Images Gallery</a>
-            </p>
-            <p class='credit'>
-                Sorting algorithm developed by <a href="https://www.wkiri.com">Kiri Wagstaff</a> 
-                <br>
-                at the <a href="https://ml.jpl.nasa.gov">JPL Machine Learning and Instrument Autonomy Group</a>
-                <br>
-                All images credit NASA/JPL-Caltech/ASU
-                <br>
-                Last updated 2021-03-19 with 4,764 images
-            <p>
-
+                <p class='desc'>
+                    A one-day project by <a href="http://jakehlee.com">Jake Lee</a> using open-source tools
+                    <br>
+                    Visit the <a href="https://mars.nasa.gov/mars2020/multimedia/raw-images/">NASA Mars 2020 Raw Images Gallery</a>
+                </p>
+                <p class='credit'>
+                    <a href="https://github.com/wkiri/demud">DEMUD algorithm</a> developed by <a href="https://www.wkiri.com">Kiri Wagstaff</a> et al.
+                    <br>
+                    at the <a href="https://ml.jpl.nasa.gov">JPL Machine Learning and Instrument Autonomy Group</a>
+                    <br>
+                    All images credit NASA/JPL-Caltech/ASU
+                    <br>
+                    Last updated 2021-03-19 with 4,764 images
+                    <br>
+                    <br>
+                    <a class="btn btn-primary" data-toggle="collapse" href="#methods" role="button" aria-expanded="false" aria-controls="methods">
+                        How does this work?
+                    </a>
+                <p>
+            </div>
+            <div class="col-md-8">
+                <div class="collapse" id='methods'>
+                    <div class="card card-body">
+                        <blockquote class="blockquote">
+                            <p class="mb-0">If you give DEMUD a massive orchard, it will return with one of every fruit.</p>
+                        </blockquote>
+                        <p class='text-left'>
+                            Because Perseverance takes many images of the same object by design (such as calibration targets), 
+                            sorting them chronologically in a gallery results in many pages of similar content. 
+                            To find all of the different objects and content in the gallery, you have to flip through hundreds 
+                            of pages of thousands of images.
+                        </p>
+                        <p>
+                            The DEMUD algorithm solves this problem by <b>prioritizing the set of images with the most
+                            diverse and novel content</b>. It quickly identifies one of every item and prioritizes them 
+                            for for you to look at. If you give DEMUD a massive orchard, it will return with one of every 
+                            fruit. This can be massively useful for quickly finding interesting things in a massive dataset.
+                        </p>
+                        <p>
+                            The DEMUD algorithm is also capable of explaning <i>why</i> it thought an item was interesting
+                            enough to bring to your attention. It's not implemented here, but check it out below.
+                        </p>
+                        <p>
+                            <b>Steps</b>
+                            <ol>
+                                <li>Extract features from each image with ResNet-50's last fully-connected layer prior to softmax</li>
+                                <li>Find interesting images with DEMUD</li>
+                                <li>Display the top 500 in order of prioritization</li> 
+                            </ol>
+                        </p>
+                        <p>
+                            <b>Resources</b>
+                            <ul>
+                                <li><a href="https://github.com/wkiri/DEMUD">DEMUD GitHub Repository</a></li>
+                                <li>"Guiding Scientific Discovery with Explanations using DEMUD", Wagstaff et al., AAAI 2013 <a href="https://wkiri.com/research/papers/wagstaff-demud-13.pdf">[paper link]</a></li>
+                                <li>"Unusual ChemCam Targets Disocvered Automatically in Curiosity's First Ninety Sols in Gale Crater, Mars", Wagstaff et al., LPSC 2014 <a href="http://www.hou.usra.edu/meetings/lpsc2014/pdf/1575.pdf">[paper link]</a></li>
+                                <li>"Interpretable Discovery in Large Image Data Sets", Wagstaff and Lee, ICML WHI 2018 <a href="https://wkiri.com/research/papers/wagstaff-interp-18.pdf">[paper link]</a></li>
+                                <li>"Visualizing Image Content to Explain Novel Image Discovery", Lee and Wagstaff, DMKD 2020 <a href="https://jakehlee.github.io/visualize-img-disc">[paper site]</a></li>
+                            </ul>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row center">
             <nav aria-label="Change image gallery page">
                 <ul class="pagination justify-content-center" id='pagination'>
                 </ul>
