@@ -29,7 +29,7 @@
                 <h1><small class="text-muted">Sorted for Content Diversity</small></h1>
                 <br>
                 <p class='desc'>
-                    A one-day project by <a href="http://jakehlee.com">Jake Lee</a> using open-source tools
+                    A two-day project by <a href="http://jakehlee.com">Jake Lee</a> using open-source tools
                     <br>
                     Visit the <a href="https://mars.nasa.gov/mars2020/multimedia/raw-images/">NASA Mars 2020 Raw Images Gallery</a>
                 </p>
@@ -40,12 +40,16 @@
                     <br>
                     All images credit NASA/JPL-Caltech/ASU/CAB
                     <br>
-                    Last updated 2021-03-23 with 5949 images, results updated daily
+                    Last updated 2021-03-24 with 5987 images, results updated daily
                     <br>
                     <br>
                     <a class="btn btn-primary" data-toggle="collapse" href="#methods" role="button" aria-expanded="false" aria-controls="methods">
                         How does this work?
                     </a>
+                    <a class="btn btn-success" data-toggle="collapse" href="#instruments" role="button" aria-expanded="false" aria-controls="instruments">
+                        Filter by Instrument!
+                    </a>
+
                 <p>
             </div>
             <div class="col-md-8">
@@ -88,6 +92,47 @@
                                 <li>"Visualizing Image Content to Explain Novel Image Discovery", Lee and Wagstaff, DMKD 2020 <a href="https://jakehlee.github.io/visualize-img-disc">[paper site]</a></li>
                             </ul>
                         </p>
+                        <p>
+                            <b>Update History</b>
+                            <ul>
+                                <li>First Day: Initial website design, DEMUD results on entire dataset</li>
+                                <li>Second Day: DEMUD results on each experiment</li>
+                            </ul>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-8">
+                <div class="collapse" id='instruments'>
+                    <div class="card card-body">
+                        <form id='instrument-form'>
+                            <div class="form-group row">
+                                <div class="form-group col-sm-6" id="instrument-form-group"></div>
+                                <div class="col-sm-6">
+                                    <h2>Instrument Filter</h2>
+                                    <p>
+                                        This feature allows you to see diverse images from a specific instrument on the 
+                                        Perseverance rover. We re-ran our algorithm on each instrument separately.
+                                    </p>
+                                    <p>
+                                        Instrument filtered results only use <b>RGB/multi-channel</b> images from each 
+                                        instrument. Most of the grayscale images are the individual channels of those
+                                        images, so minimal content is lost.
+                                    </p>
+                                    <p>
+                                        You may notice in filtered results that images seem to get repetitive and similar in 
+                                        latter pages of the gallery. This is simply because we've run out of diverse and 
+                                        interesting images!
+                                        Finally, some instruments don't have enough images to fill all 20 pages of the
+                                        gallery, so "N/A" will be shown.
+                                    </p>
+                                    <p>
+                                        I personally think these are the most interesting results, have fun!
+                                    </p>
+                                </div>
+                            </div>
+                            <button class="btn btn-primary" id='update-instrument' type='button'>Update Filter</button>
+                        </form>
                     </div>
                 </div>
             </div>
