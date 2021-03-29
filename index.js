@@ -33,7 +33,7 @@ function updateTable(page, id) {
             cellArray.map(function(cel, idx) {
                 dataIdx = (page-1)*25+idx;
                 if (dataIdx < data.length) {
-                    cel.innerHTML = '<a href="'+linkRoot+data[dataIdx][0]+'"><img class="m2020-img" src="'+data[(page-1)*25+idx][1]+'"></a>';
+                    cel.innerHTML = '<a href="'+linkRoot+data[dataIdx][0]+'" target="_blank"><img class="m2020-img" src="'+data[(page-1)*25+idx][1]+'"></a>';
                 } else {
                     cel.innerHTML = '<p class="text-center">N/A</p>';
                 }
