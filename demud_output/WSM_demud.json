@@ -104,12 +104,12 @@
         "https://mars.nasa.gov/mars2020-raw-images/pub/ods/surface/sol/00029/ids/edr/browse/meda/WSM_0029_0669532779_000ECM_N0030828MEDA03345_0000LUJ01_320.jpg"
     ],
     [
-        "WSM_0030_0669593327_000ECM_N0030828MEDA03345_0000LUJ",
-        "https://mars.nasa.gov/mars2020-raw-images/pub/ods/surface/sol/00030/ids/edr/browse/meda/WSM_0030_0669593327_000ECM_N0030828MEDA03345_0000LUJ01_320.jpg"
+        "WSM_0041_0670590551_000ECM_N0031392MEDA03145_0000LUJ",
+        "https://mars.nasa.gov/mars2020-raw-images/pub/ods/surface/sol/00041/ids/edr/browse/meda/WSM_0041_0670590551_000ECM_N0031392MEDA03145_0000LUJ01_320.jpg"
     ],
     [
-        "WSM_0037_0670235464_000ECM_N0031392MEDA03145_0000LUJ",
-        "https://mars.nasa.gov/mars2020-raw-images/pub/ods/surface/sol/00037/ids/edr/browse/meda/WSM_0037_0670235464_000ECM_N0031392MEDA03145_0000LUJ02_320.jpg"
+        "WSM_0030_0669593327_000ECM_N0030828MEDA03345_0000LUJ",
+        "https://mars.nasa.gov/mars2020-raw-images/pub/ods/surface/sol/00030/ids/edr/browse/meda/WSM_0030_0669593327_000ECM_N0030828MEDA03345_0000LUJ01_320.jpg"
     ],
     [
         "WSM_0030_0669613846_000ECM_N0030828MEDA03345_0000LUJ",
@@ -118,6 +118,10 @@
     [
         "WSM_0017_0668439716_000ECM_N0030578MEDA03345_0000LUJ",
         "https://mars.nasa.gov/mars2020-raw-images/pub/ods/surface/sol/00017/ids/edr/browse/meda/WSM_0017_0668439716_000ECM_N0030578MEDA03345_0000LUJ01_320.jpg"
+    ],
+    [
+        "WSM_0037_0670235464_000ECM_N0031392MEDA03145_0000LUJ",
+        "https://mars.nasa.gov/mars2020-raw-images/pub/ods/surface/sol/00037/ids/edr/browse/meda/WSM_0037_0670235464_000ECM_N0031392MEDA03145_0000LUJ02_320.jpg"
     ],
     [
         "WSM_0021_0668726113_000ECM_N0030770MEDA03345_0000LUJ",
@@ -130,5 +134,9 @@
     [
         "WSM_0038_0670324226_000ECM_N0031392MEDA03145_0000LUJ",
         "https://mars.nasa.gov/mars2020-raw-images/pub/ods/surface/sol/00038/ids/edr/browse/meda/WSM_0038_0670324226_000ECM_N0031392MEDA03145_0000LUJ01_320.jpg"
+    ],
+    [
+        "WSM_0022_0668794716_000ECM_N0030770MEDA03345_0000LUJ",
+        "https://mars.nasa.gov/mars2020-raw-images/pub/ods/surface/sol/00022/ids/edr/browse/meda/WSM_0022_0668794716_000ECM_N0030770MEDA03345_0000LUJ01_320.jpg"
     ]
 ]

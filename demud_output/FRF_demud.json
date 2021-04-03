@@ -1,7 +1,7 @@
 [
     [
         "FRF_0034_0669963078_931ECM_N0031392FHAZ02003_01_195J",
-        "https://mars.nasa.gov/mars2020-raw-images/pub/ods/surface/sol/00034/ids/edr/browse/fcam/FRF_0034_0669963078_931ECM_N0031392FHAZ02003_01_195J01_320.jpg"
+        "https://mars.nasa.gov/mars2020-raw-images/pub/ods/surface/sol/00034/ids/edr/browse/fcam/FRF_0034_0669963078_931ECM_N0031392FHAZ02003_01_195J02_320.jpg"
     ],
     [
         "FRF_0030_0669613118_371ECM_N0030828FHAZ00201_01_295J",
@@ -41,7 +41,7 @@
     ],
     [
         "FRF_0034_0669963078_931ECM_N0031392FHAZ02003_04_195J",
-        "https://mars.nasa.gov/mars2020-raw-images/pub/ods/surface/sol/00034/ids/edr/browse/fcam/FRF_0034_0669963078_931ECM_N0031392FHAZ02003_04_195J01_320.jpg"
+        "https://mars.nasa.gov/mars2020-raw-images/pub/ods/surface/sol/00034/ids/edr/browse/fcam/FRF_0034_0669963078_931ECM_N0031392FHAZ02003_04_195J02_320.jpg"
     ],
     [
         "FRF_0035_0670055116_773ECM_N0031392FHAZ00201_01_295J",
@@ -141,7 +141,7 @@
     ],
     [
         "FRF_0034_0669963078_931ECM_N0031392FHAZ02003_07_295J",
-        "https://mars.nasa.gov/mars2020-raw-images/pub/ods/surface/sol/00034/ids/edr/browse/fcam/FRF_0034_0669963078_931ECM_N0031392FHAZ02003_07_295J01_320.jpg"
+        "https://mars.nasa.gov/mars2020-raw-images/pub/ods/surface/sol/00034/ids/edr/browse/fcam/FRF_0034_0669963078_931ECM_N0031392FHAZ02003_07_295J02_320.jpg"
     ],
     [
         "FRF_0031_0669700992_097ECM_N0031044FHAZ02003_01_195J",
@@ -256,7 +256,11 @@
         "https://mars.nasa.gov/mars2020-raw-images/pub/ods/surface/sol/00009/ids/edr/browse/fcam/FRF_0009_0667754529_115EBY_N0030000FHAZ00102_13_0LLJ01_320.jpg"
     ],
     [
-        "FRF_0037_0670232613_522ECM_N0031392FHAZ00201_01_295J",
-        "https://mars.nasa.gov/mars2020-raw-images/pub/ods/surface/sol/00037/ids/edr/browse/fcam/FRF_0037_0670232613_522ECM_N0031392FHAZ00201_01_295J01_320.jpg"
+        "FRF_0039_0670410222_508ECM_N0031392FHAZ00201_01_295J",
+        "https://mars.nasa.gov/mars2020-raw-images/pub/ods/surface/sol/00039/ids/edr/browse/fcam/FRF_0039_0670410222_508ECM_N0031392FHAZ00201_01_295J01_320.jpg"
+    ],
+    [
+        "FRF_0036_0670143894_633ECM_N0031392FHAZ00201_01_295J",
+        "https://mars.nasa.gov/mars2020-raw-images/pub/ods/surface/sol/00036/ids/edr/browse/fcam/FRF_0036_0670143894_633ECM_N0031392FHAZ00201_01_295J02_320.jpg"
     ]
 ]
